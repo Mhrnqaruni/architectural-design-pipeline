@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Architectural Design Pipeline"
+abstract: >-
+  Concept-stage architectural design as code. A parametric design model written in Python
+  generates a standards-based CAD drawing set (DXF, PDF, PNG), a furnished interactive
+  three.js model and a verified area schedule. Circulation reachability, door-swing
+  clearance, area limits, area-schedule closure and DXF validity are enforced as a build gate.
+authors:
+  - family-names: Gharooni
+    given-names: Mehran
+version: 1.0.0
+date-released: 2026-11-08
+license: MIT
+repository-code: "https://github.com/Mhrnqaruni/architectural-design-pipeline"
+url: "https://mhrnqaruni.github.io/architectural-design-pipeline/"
+keywords:
+  - computational design
+  - architectural design
+  - design automation
+  - CAD
+  - DXF
+  - floor plan
+  - three.js
+  - WebGL
+  - AEC

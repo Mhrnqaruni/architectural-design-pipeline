@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "archdesign"
+version = "1.0.0"
+description = "Concept-stage architectural design as code: a CAD drawing set, a furnished 3D model and verified design rules from one design model."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "archdesign/vendor/three-r147/LICENSE"]
+authors = [{ name = "Mehran Gharooni" }]
+keywords = ["architecture", "computational-design", "cad", "dxf", "floor-plan", "threejs", "design-automation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Graphics :: 3D Modeling",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "ezdxf==1.4.5",
+    "PyMuPDF==1.28.0",
+    "arabic-reshaper==3.1.0",
+    "python-bidi==0.6.12",
+    "numpy==2.4.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "Pillow==12.2.0"]
+
+[project.scripts]
+archdesign = "archdesign.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Mhrnqaruni/architectural-design-pipeline"
+"Live model" = "https://mhrnqaruni.github.io/architectural-design-pipeline/"
+Changelog = "https://github.com/Mhrnqaruni/architectural-design-pipeline/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+include = ["archdesign*"]
+
+[tool.setuptools.package-data]
+archdesign = ["viewer3d.html", "viewer3d.js", "vendor/three-r147/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

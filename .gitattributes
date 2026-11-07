@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.pdf binary
+*.dxf binary
+archdesign/vendor/** linguist-vendored
