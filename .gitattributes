@@ -3,4 +3,5 @@
 *.jpg binary
 *.pdf binary
 *.dxf binary
+*.mp4 binary
 archdesign/vendor/** linguist-vendored

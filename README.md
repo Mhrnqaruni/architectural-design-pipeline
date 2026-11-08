@@ -16,7 +16,8 @@ One parametric design model generates a standards-based CAD drawing set, a furni
 [**Drawing set (PDF)**](https://github.com/Mhrnqaruni/architectural-design-pipeline/releases/latest/download/concept-drawings.pdf) ·
 [Method](docs/method.md) ·
 [Architecture](docs/architecture.md) ·
-[Standards](docs/standards.md)
+[Standards](docs/standards.md) ·
+[Agent skill and video](#agent-skill)
 
 <img src="docs/figures/plan-to-model.png" width="100%" alt="A generated floor plan next to the same floor in the generated 3D model">
 
@@ -188,10 +189,27 @@ archdesign/
 ├── web_model.py                single-file 3D page and headless renders
 ├── server.py, cli.py           local allow-list server and command-line interface
 └── vendor/three-r147/          three.js (MIT)
-docs/                           method, architecture, standards, figures
+docs/                           method, architecture, standards, figures, overview video
 tests/                          design rules as tests
 tools/make_figures.py           README figures from the generated outputs
 ```
+
+## Agent skill
+
+The pipeline has been generalised into an agent skill that coding agents can use on any project:
+[architectural-concept-design](https://github.com/Mhrnqaruni/ai-agent-skill-architectural-concept-design).
+A single JSON design model replaces the per-project Python model; the skill keeps the same
+drawing, rule-checking and 3D methods.
+
+<a href="docs/media/overview.mp4"><img src="docs/media/overview-poster.jpg" width="280" align="right" alt="Frame from the skill's overview video: the furnished 3D model with its roof and first floor lifted away"></a>
+
+The skill's 52-second overview video shows one run on its example project. It covers the brief,
+the design model, the rule check catching two planted errors, the fix, the A3 drawing set and the
+furnished 3D model.
+
+[Watch the video](docs/media/overview.mp4) (MP4, 1080×1350, 12 MB).
+
+<br clear="right">
 
 ## Roadmap
 

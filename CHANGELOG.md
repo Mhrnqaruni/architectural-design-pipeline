@@ -4,6 +4,13 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- An "Agent skill" section in the README linking the generalised agent skill and its overview
+  video (`docs/media/overview.mp4`).
+
 ## [1.0.0] - 2026-11-08
 
 ### Added
@@ -19,4 +26,5 @@ All notable changes to this project are documented here. The format follows
 - `archdesign` command-line interface with `check`, `drawings`, `model`, `all` and `serve`.
 - Test suite, CI on Python 3.11 and 3.12, and deployment of the 3D model to GitHub Pages.
 
+[Unreleased]: https://github.com/Mhrnqaruni/architectural-design-pipeline/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/Mhrnqaruni/architectural-design-pipeline/releases/tag/v1.0.0
